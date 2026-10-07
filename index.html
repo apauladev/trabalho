@@ -4,16 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de veículos</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
     <header>
+
+        <!-- //Menu de navegação com links para as seções "Sobre" e "Contato"// -->
+        <nav>
+            <ul>
+                <li><a href="#sobre-tabela-fipe">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <!-- //Título e subtítulo da página// -->
         <h1 class="titulo">Quer conhecer mais sobre marcas, carros e modelos?</h1>
         <h2 class="subtitulo">Então você encontrou o lugar certo!!</h2>
     </header>
 
     <main class="corpo">
 
+        <!-- //Seção de descrição com informações sobre a plataforma// -->
         <section id="descricao">
             <ul>
                 <li>Consulte informações sobre veículos de forma rápida, simples e organizada.</li>
@@ -22,24 +35,61 @@
             </ul>
         </section>
 
+        <!-- //Seção de escolha do tipo de veículo com imagens representativas// -->
         <h3>Escolha um tipo de veículo</h3>
         <section id="tipo">
 
-            <a href="outra-pagina.html">
+            <a href="marcas.html">
                 <img src="Peugeot-208-Style-1.jpg" alt="Carro" width="300">
             </a>
 
-            <a href="outra-pagina.html">
+            <a href="marcas.html">
                 <img src="moto.jpg" alt="Moto" width="298">
             </a>
 
-            <a href="outra-pagina.html">
+            <a href="marcas.html">
                 <img src="caminhao.jpg" alt="Caminhão" width="298">
             </a>
-            
+
+        </section>
+
+        <!-- //Seção sobre a Tabela FIPE com informações detalhadas// -->
+        <section id="sobre-tabela-fipe">
+
+            <h3>Sobre a Tabela FIPE</h3>
+            <p>A Tabela FIPE é uma referência amplamente utilizada no Brasil para determinar os preços médios de veículos, incluindo carros, motos e caminhões. Ela é atualizada regularmente e leva em consideração diversos fatores, como marca, modelo, ano de fabricação e estado de conservação do veículo. A tabela é uma ferramenta essencial para compradores, vendedores e profissionais do setor automotivo, fornecendo informações confiáveis sobre o valor de mercado dos veículos.</p>
+
+        </section>
+
+        <!-- //Seção de contato com informações de contato e links para redes sociais// -->
+        <section id="contato">
+
+            <h3>Contato</h3>
+
+            <a href="mailto:anap03404@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+                Gmail
+            </a>
+
+            <a href="tel:+5511932504319" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+                Telefone: (11) 93250-4319
+            </a>
+
+            <a href="https://wa.me/5579999999999" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                Whatsapp
+            </a>
+
         </section>
 
     </main>
 
+    <!-- //Rodapé com direitos autorais e informações de copyright// -->
+    <footer>
+        <p>© 2026 Catálogo de Veículos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
