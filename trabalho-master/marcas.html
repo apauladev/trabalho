@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de veículos</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+
+        <!-- //Menu de navegação com link para a página inicial// -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main class="marcas">
+
+        <!-- //Seção de pesquisa - enquanto o usuário digitar trazer o card correspondente// -->
+        <section>
+
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search"
+                id="pesquisa-marca"
+                placeholder="Digite o nome da marca">
+            </div>
+
+        </section>
+
+        <!-- Seção para exibir todos os cards -->
+        <section id="exibe-marcas">
+            <h3>Escolha uma marca</h3>
+
+            <!-- //Div para exibir a lista de marcas preenchida pelo JavaScript// -->
+            <div id="lista-marcas">
+                <!-- //JavaScript irá preencher as marcas aqui// -->
+            </div>
+        </section>
+            
+    </main>
+
+    <!-- //Rodapé com direitos autorais e informações de copyright// -->
+    <footer>
+        <p>© 2026 Catálogo de Veículos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
