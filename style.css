@@ -30,10 +30,26 @@ header {
     background-color: #181B21;
     color: #F5F7FA;
     padding: 25px 60px 60px;
-    border-bottom: 1px solid #2C3139;
+    border-bottom: 1px solid #353B44;
 }
 
-/*//Estilos para o menu que está dentro do header//*/
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: #F5F7FA;
+}
+
+.logo span {
+    color: #00C2FF;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -44,7 +60,7 @@ nav ul {
 nav a {
     color: #F5F7FA;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     transition: 0.3s;
 }
 
@@ -317,6 +333,24 @@ footer p {
     box-shadow: 0 6px 20px rgba(0, 194, 255, 0.1);
 }
 
+/*// MENSAGEM DE ERRO // */
+.mensagem-erro {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #A7ADB7;
+    font-size: 16px;
+    padding: 30px;
+}
+
+/*// MENSAGEM DE CARREGANDO // */
+.mensagem-carregando {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #A7ADB7;
+    font-size: 16px;
+    padding: 30px;
+}
+
 
 /*//DETALHES// */
 
@@ -375,6 +409,10 @@ footer p {
 
     header {
         padding: 20px;
+    }
+
+    .logo {
+    font-size: 19px;
     }
 
     nav ul {
