@@ -4,6 +4,7 @@
 const pesquisaMarca = document.getElementById('pesquisa-marca');
 const listaMarcas = document.getElementById('lista-marcas');
 const tituloLista = document.getElementById('escolher');
+const pesquisa = document.getElementById('pesquisa');
 
 // Array para armazenar as marcas disponíveis //
 let marcasDisponiveis = [];
@@ -31,9 +32,10 @@ async function buscarMarcas(tipo) {
             card.textContent = marca.nome;
 
             card.addEventListener('click', function() {
-                tituloLista.textContent = "Escolha um modelo";
-                buscarModelos(marca.valor);
-            });
+            tituloLista.textContent = "Escolha um modelo";
+            pesquisa.style.display = 'none';
+             buscarModelos(marca.valor);
+});
 
             listaMarcas.appendChild(card);
         });
@@ -67,6 +69,7 @@ if (pesquisaMarca) {
 
             card.addEventListener('click', function() {
                 tituloLista.textContent = "Escolha um modelo";
+                pesquisa.style.display = 'none';
                 buscarModelos(marca.valor);
             });
 
