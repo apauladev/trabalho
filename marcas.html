@@ -6,6 +6,10 @@
     <title>Catálogo de veículos</title>
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,7 +27,7 @@
     <main class="marcas">
 
         <!-- //Seção de pesquisa - enquanto o usuário digitar trazer o card correspondente// -->
-        <section>
+        <section id="pesquisa">
 
             <div>
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -34,9 +38,9 @@
 
         </section>
 
-        <!-- Seção para exibir todos os cards -->
+        <!-- Seção para exibir as opções -->
         <section id="exibe-marcas">
-            <h3>Escolha uma marca</h3>
+            <h3 id="escolher">Escolha uma marca</h3>
 
             <!-- //Div para exibir a lista de marcas preenchida pelo JavaScript// -->
             <div id="lista-marcas">
